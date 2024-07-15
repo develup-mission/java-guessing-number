@@ -1,5 +1,6 @@
 # 미션 - 숫자 추리 게임
-![ㅁ](https://github.com/user-attachments/assets/8073effc-83c7-461e-819b-17a8716ed2bb)
+![marsha-reid-6et-uhOWj8c-unsplash](https://github.com/user-attachments/assets/1e55fe1a-b636-4f19-ac70-57f6a37fc3ec)
+
 ## 🚀 진행 방식
 // 리뷰 방식 컨텐츠에 따라 채우기 (or 링크 첨부)
 ## 💻 기능 요구 사항
