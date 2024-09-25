@@ -1,6 +1,4 @@
 # 미션 - 숫자 맞추기 게임
-<img width="700" alt="스크린샷 2024-07-15 오후 3 49 26" src="https://github.com/develup-mission/docs/blob/main/image/java-guessing-number.png">
-
 ## 🚀 진행 방식
 1. 미션 진행은 [미션 진행 가이드 문서](https://github.com/develup-mission/docs/blob/main/mission-guide.md)를 따른다.
 
