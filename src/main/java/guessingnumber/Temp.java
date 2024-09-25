@@ -1,0 +1,4 @@
+package guessingnumber;
+
+class Temp {
+}
