@@ -33,4 +33,14 @@ class ComputerTest {
         final AnswerStatus answer = computer.answer(new Number(50));
         assertThat(answer).isEqualTo(AnswerStatus.LOW);
     }
+
+    @Test
+    @DisplayName("정답을 맞추면, 종료 상태를 반환한다.")
+    void answer_equal_change_isFinished(){
+        final Computer computer = new Computer(new Number(20));
+
+        assertThat(computer.isNotFinished()).isTrue();
+        computer.answer(new Number(20));
+        assertThat(computer.isNotFinished()).isFalse();
+    }
 }
