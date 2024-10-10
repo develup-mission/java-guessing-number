@@ -23,4 +23,25 @@ class NumberTest {
         assertThatThrownBy(() -> Number.from("Not Number"))
                 .isInstanceOf(IllegalArgumentException.class);
     }
+
+    @Test
+    @DisplayName("숫자가 동일하면 참을 반환한다.")
+    void return_true_when_equals() {
+        final Number number1 = new Number(5);
+        assertThat(number1.equals(new Number(5))).isTrue();
+    }
+
+    @Test
+    @DisplayName("숫자가 더 크면 참을 반환한다.")
+    void return_true_when_greater() {
+        final Number number1 = new Number(5);
+        assertThat(number1.isGreaterThan(new Number(3))).isTrue();
+    }
+
+    @Test
+    @DisplayName("숫자가 더 작으면 거짓을 반환한다.")
+    void return_false_when_greater() {
+        final Number number1 = new Number(5);
+        assertThat(number1.isGreaterThan(new Number(6))).isFalse();
+    }
 }

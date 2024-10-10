@@ -8,4 +8,12 @@ public record Number(int number) {
             throw new IllegalArgumentException(String.format("%s 는 숫자가 아닙니다.", value), e);
         }
     }
+
+    public boolean isEqual(final Number other) {
+        return this.number == other.number;
+    }
+
+    public boolean isGreaterThan(final Number other) {
+        return this.number > other.number;
+    }
 }
