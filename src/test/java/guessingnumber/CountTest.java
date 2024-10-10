@@ -10,16 +10,16 @@ class CountTest {
     @Test
     @DisplayName("횟수는 0부터 시작한다.")
     void start_with_zero() {
-        final Count count = new Count();
-        assertThat(count.count()).isZero();
+        final Count count = new Count(3);
+        assertThat(count).isEqualTo(new Count(0,3));
     }
 
     @Test
     @DisplayName("횟수를 1씩 증가시킨다.")
     void increase_count() {
-        final Count count = new Count();
-        final Count increaseCount = count.increase();
-        assertThat(increaseCount.count()).isEqualTo(1);
+        final Count count = new Count(3);
+        count.increase();
+        assertThat(count).isEqualTo(new Count(1,3));
     }
 
     @Test
@@ -29,5 +29,4 @@ class CountTest {
         assertThatThrownBy(() -> count.increase())
                 .isInstanceOf(IllegalStateException.class);
     }
-
 }

@@ -1,16 +1,41 @@
 package guessingnumber;
 
-public record Count(int count, int threshold) {
-    private static final int DEFAULT_TRY_COUNT = 3;
+import java.util.Objects;
 
-    public Count() {
-        this(0, DEFAULT_TRY_COUNT);
+public class Count {
+    private int value;
+    private final int threshold;
+
+
+    public Count(final int threshold) {
+        this(0, threshold);
     }
 
-    public Count increase() {
-        if (this.count == threshold) {
+    public Count(final int value, final int threshold) {
+        this.value = value;
+        this.threshold = threshold;
+    }
+
+    public void increase() {
+        if (this.value == threshold) {
             throw new IllegalStateException("시도 횟수를 초과 했습니다.");
         }
-        return new Count(this.count + 1, threshold);
+        this.value += 1;
+    }
+
+    public boolean isUnderThreshold() {
+        return this.value < threshold;
+    }
+
+    @Override
+    public boolean equals(final Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Count count1)) return false;
+        return value == count1.value && threshold == count1.threshold;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(value, threshold);
     }
 }
