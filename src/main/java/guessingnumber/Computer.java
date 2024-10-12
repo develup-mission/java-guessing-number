@@ -5,13 +5,8 @@ import java.util.Random;
 public class Computer {
 
     private final int randomNumber;
-    private static final Computer computer = new Computer();
 
-    public static Computer getInstance() {
-        return computer;
-    }
-
-    private Computer() {
+    public Computer() {
         randomNumber = setNumberOfComputer();
     }
 

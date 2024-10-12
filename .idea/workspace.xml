@@ -4,13 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f13d144-b960-467d-ad0b-266dbb961208" name="Changes" comment="feat : select user number">
+    <list default="true" id="8f13d144-b960-467d-ad0b-266dbb961208" name="Changes" comment="feat : 예외처리">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.1.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/guessingnumber/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/guessingnumber/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/guessingnumber/Computer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/guessingnumber/Computer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/guessingnumber/GameManage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/guessingnumber/GameManage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/guessingnumber/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/guessingnumber/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Application.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Application.class.uniqueId0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/GameManage.class.uniqueId2" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/GameManage.class.uniqueId2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/User.class.uniqueId1" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/User.class.uniqueId1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/guessingnumber/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guessingnumber/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guessingnumber/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guessingnumber/Computer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/guessingnumber/GameManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guessingnumber/GameManage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/guessingnumber/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guessingnumber/User.java" afterDir="false" />
     </list>
@@ -121,7 +132,7 @@
       <workItem from="1728745379557" duration="254000" />
       <workItem from="1728745650628" duration="149000" />
       <workItem from="1728745819365" duration="660000" />
-      <workItem from="1728746500234" duration="369000" />
+      <workItem from="1728746500234" duration="3374000" />
     </task>
     <task id="LOCAL-00001" summary="feat : make random number of computer">
       <option name="closed" value="true" />
@@ -139,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728741844599</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat : manage the game">
+      <option name="closed" value="true" />
+      <created>1728747138644</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728747138644</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +178,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat : make random number of computer" />
     <MESSAGE value="feat : select user number" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : select user number" />
+    <MESSAGE value="feat : manage the game" />
+    <MESSAGE value="feat : 예외처리" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : 예외처리" />
   </component>
 </project>

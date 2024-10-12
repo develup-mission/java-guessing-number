@@ -1,7 +1,9 @@
 package guessingnumber;
 
+import java.io.IOException;
+
 public class Application {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         boolean flag = false;
 
         while (!flag) {
