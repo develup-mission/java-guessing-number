@@ -2,7 +2,15 @@ package guessingnumber;
 
 public class Application {
     public static void main(String[] args) {
-        GameManage gameManage = new GameManage();
-        gameManage.gameStart();
+        boolean flag = false;
+
+        while (!flag) {
+            GameManage gameManage = new GameManage();
+            gameManage.gameStart();
+
+            if (!gameManage.restart()) {
+                flag = true;
+            }
+        }
     }
 }
