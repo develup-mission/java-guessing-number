@@ -20,7 +20,7 @@ public class ApplicationTest {
         //게임은 1~100사이의 답안을 가지고 있어야한다.
         //게임은 3개의 생명을 가지고 시작한다.
         //assert
-        assertEquals(game.getLifes(),3);
+        assertEquals(game.getLife(),3);
         assertTrue(game.getAnswer()<=100 && game.getAnswer()>=1);
     }
 
