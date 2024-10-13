@@ -4,11 +4,14 @@ import java.util.Random;
 
 public class GuessNumGame {
 
+    int answer;
+    int life;
     public GuessNumGame() {
     }
 
     public void start() {
-        int Answer=new Random().nextInt(100)+1;
-        int life=3;
+        answer=new Random().nextInt(100)+1;
+        life=3;
     }
+
 }
