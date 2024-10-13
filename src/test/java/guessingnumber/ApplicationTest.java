@@ -26,17 +26,30 @@ public class ApplicationTest {
 
     @Test
     void 사용자가_더높은답안을_제출한경우_오답판단(){
+        //오답 판단 후
+        //높은지,낮은지 반환하는 함수로 돌려받음 [1,-1,0]
+        //
         int user_input=game.getAnswer()+1;
+        int confirmed=game.confirmAnswer(user_input);
 
+        //assert
+        assertEquals(confirmed,1);
     }
     @Test
     void 사용자가_더낮은답안을_제출한경우_오답판단(){
+        int user_input=game.getAnswer()-1;
+        int confirmed=game.confirmAnswer(user_input);
 
+        //assert
+        assertEquals(confirmed,-1);
     }
 
     @Test
     void 사용자가_정답을_제출한경우_정답판단(){
+        int user_input=game.getAnswer()+-1;
+        int confirmed=game.confirmAnswer(user_input);
 
+        assertEquals(confirmed,0);
     }
 
     @Test
