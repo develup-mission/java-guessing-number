@@ -7,6 +7,8 @@ import guessingnumber.view.OutputView;
 public class MainController {
     private static final int START_NUM = 1;
     private static final int END_NUM = 100;
+    private static final String YES_OPTION = "y";
+    private static final String NO_OPTION = "n";
 
 
     public void run() {
@@ -29,8 +31,8 @@ public class MainController {
         String input;
         do {
             input = InputView.inputGameLoop();
-        } while (!input.equals("y") && !input.equals("n"));
-        return input.equals("y");
+        } while (!input.equals(YES_OPTION) && !input.equals(NO_OPTION));
+        return input.equals(YES_OPTION);
     }
 
     private boolean validate(int userNum, int computerNum) {
