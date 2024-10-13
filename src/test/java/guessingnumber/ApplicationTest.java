@@ -46,19 +46,12 @@ public class ApplicationTest {
 
     @Test
     void 사용자가_정답을_제출한경우_정답판단(){
-        int user_input=game.getAnswer()+-1;
+        int user_input=game.getAnswer();
         int confirmed=game.confirmAnswer(user_input);
+
 
         assertEquals(confirmed,0);
     }
 
-    @Test
-    void life가_0이되면_게임이패배된다(){
-
-    }
-    @Test
-    void 게임종료후_다시_게임재개를_묻는다(){
-
-    }
 
 }
