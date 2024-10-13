@@ -40,7 +40,7 @@ public class ApplicationTest {
     }
 
     @Test
-    void 3회틀릴경우_게임이패배된다(){
+    void life가_0이되면_게임이패배된다(){
 
     }
     @Test
