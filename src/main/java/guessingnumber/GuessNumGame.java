@@ -14,4 +14,11 @@ public class GuessNumGame {
         life=3;
     }
 
+    public int getAnswer() {
+        return answer;
+    }
+
+    public int getLife() {
+        return life;
+    }
 }
