@@ -16,32 +16,48 @@ public class Application {
 
 
 class ChooseNum{
-    Random random=new Random();
-    int randomNumber;
+    private Random random=new Random();
+    private int randomNumber;
+    static final int minnumber=1;
+    static final int maxnumber=100;
+    private int chance=3; // 현재 기회
+    Scanner sc= new Scanner(System.in);
 
-   public ChooseNum(){
-       randomNumber= random.nextInt(100)+1; //1~100 범위의 랜덤 숫자
+    //random한 숫자를 정하는 메서드
+    public ChooseNum(){
+       randomNumber= random.nextInt(maxnumber)+1; //1~100 범위의 랜덤 숫자
        System.out.println("숫자 추리 게임을 시작합니다.");
    }
 
+   //게임 진행 메서드
    public String playGame(){
-       Scanner sc= new Scanner(System.in);
-       for(int i=0; i<3; i++) {
-        System.out.println("1부터 100 사이 숫자 중 하나를 골라주세요.");
-        int x= sc.nextInt();
+       while(chance!=0) {
+           System.out.println(minnumber+"부터"+maxnumber+ "사이 숫자 중 하나를 골라주세요.");
+            int x= sc.nextInt();
 
-        if (x > randomNumber) {
-            System.out.println("더 낮습니다.");
-        } else if (x < randomNumber) {
-            System.out.println("더 높습니다");
-        } else {
-            System.out.println("정답입니다.");
-            break; //정답을 맞추면 반복 종료
+            if (x > randomNumber) {
+                System.out.println("더 낮습니다.");
+            } else if (x < randomNumber) {
+                System.out.println("더 높습니다");
+            } else {
+                System.out.println("정답입니다.");
+                break; //정답을 맞추면 반복 종료
+            }
+            chance--;
         }
-    }
-    System.out.println("게임을 다시 시작하겠습니까? (예 :y, 아니오:n)");
-    String s = sc.next();
-    return s;
+
+    String s;
+    //예외처리
+       while(true) {
+           System.out.println("게임을 다시 시작하겠습니까? (예 :y, 아니오:n)");
+           s = sc.next();
+           if (s.equalsIgnoreCase("y")|| s.equalsIgnoreCase("n")) {
+               break;
+           }else{
+               System.out.println("잘못된 입력입니다. y또는 n을 입력하세요");
+           }
+       }
+       return s;
    }
 }
 
